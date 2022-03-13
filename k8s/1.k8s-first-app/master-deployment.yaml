@@ -32,6 +32,6 @@ spec:
     spec:
       containers:
         - name: second-node
-          image: thonglevan131/kube-first-app
+          image: thonglevan131/kube-first-app:v1.0
         # - name: ...
         #   image: ...
