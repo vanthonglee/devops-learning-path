@@ -14,7 +14,13 @@ spec:
     spec:
       containers:
         - name: story
-          image: thonglevan131/kube-data-demo:v3.0
+          image: thonglevan131/kube-data-demo:v5.0
+          env:
+            - name: STORY_FOLDER
+              valueFrom:
+                configMapKeyRef:
+                  name: data-store-env
+                  key: folder
           volumeMounts:
             - mountPath: /app/story
               name: story-volume
