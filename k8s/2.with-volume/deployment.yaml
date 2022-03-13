@@ -18,5 +18,8 @@ spec:
           volumeMounts:
             - mountPath: /app/story
               name: story-volume
+      volumes:
+        - name: story-volume
+          emptyDir: {}
             
 
