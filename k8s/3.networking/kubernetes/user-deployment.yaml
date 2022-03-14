@@ -17,7 +17,5 @@ spec:
           image: thonglevan131/kub-demo-users:latest
           env:
             - name: AUTH_ADDRESS
-              value: localhost
-        - name: auth
-          image: thonglevan131/kub-demo-auth:latest
+              value: "10.102.245.205"
 
